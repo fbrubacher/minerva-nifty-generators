@@ -49,17 +49,10 @@ class NiftyScaffoldGenerator < Rails::Generator::Base
           m.migration_template "migration.rb", "db/migrate", :migration_file_name => "create_#{plural_name}"
         end
         
-        if rspec?
-          m.directory "spec/models"
-          m.template "tests/#{test_framework}/model.rb", "spec/models/#{singular_name}_spec.rb"
-          m.directory "spec/fixtures"
-          m.template "fixtures.yml", "spec/fixtures/#{plural_name}.yml"
-        else
-          m.directory "test/unit"
-          m.template "tests/#{test_framework}/model.rb", "test/unit/#{singular_name}_test.rb"
-          m.directory "test/fixtures"
-          m.template "fixtures.yml", "test/fixtures/#{plural_name}.yml"
-        end
+        m.directory "test/unit"
+        m.template "tests/#{test_framework}/model.rb", "test/unit/#{singular_name}_test.rb"
+        m.directory "test/factories"
+        m.template "factories.rb", File.join('test/factories', "#{plural_name}.rb")
       end
       
       unless options[:skip_controller]
@@ -230,3 +223,25 @@ USAGE: #{$0} #{spec.name} ModelName [controller_actions and model:attributes] [o
 EOS
   end
 end
+
+module Rails
+  module Generator
+    class GeneratedAttribute
+      def default_for_factory
+        @default ||= case type
+          when :integer                     then 1
+          when :float                       then 1.5
+          when :decimal                     then "9.99"
+          when :datetime, :timestamp, :time then 'Time.now'
+          when :date                        then 'Date.today'
+          when :string                      then '"MyString"'
+          when :text                        then '"MyText"'
+          when :boolean                     then false
+          else
+            ""
+        end      
+      end
+    end
+  end
+end
+
