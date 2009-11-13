@@ -9,6 +9,10 @@ class NiftyConfigGenerator < Rails::Generator::Base
       m.directory 'config/initializers'
 
       m.template "load_config.rb", "config/initializers/load_#{file_name}_config.rb"
+      if Rails.version <= '2.3.4'
+        m.file     "preinitializer.rb", "config/preinitializer.rb"
+      end
+      m.file     "gemfile", "gemfile"
       m.file     "config.yml",  "config/#{file_name}_config.yml"
     end
   end
