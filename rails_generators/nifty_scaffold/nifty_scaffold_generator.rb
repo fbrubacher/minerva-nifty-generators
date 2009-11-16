@@ -1,6 +1,28 @@
 class NiftyScaffoldGenerator < Rails::Generator::Base
   attr_accessor :name, :attributes, :controller_actions
   
+  def override_base
+    Rails::Generator::GeneratedAttribute.class_eval do 
+       def field_type
+        @field_type ||= case type
+          when :integer, :float, :decimal   
+            if /_id$/.match(name) 
+              :select
+            else
+              :text_field
+            end
+          when :datetime, :timestamp, :time then :datetime_select
+          when :date                        then :date_select
+          when :string                      then :text_field
+          when :text                        then :text_area
+          when :boolean                     then :check_box
+          else
+            :text_field
+        end      
+      end
+    end
+  end
+
   def initialize(runtime_args, runtime_options = {})
     super
     usage if @args.empty?
@@ -13,6 +35,8 @@ class NiftyScaffoldGenerator < Rails::Generator::Base
       if arg == '!'
         options[:invert] = true
       elsif arg.include? ':'
+        debugger
+        override_base
         @attributes << Rails::Generator::GeneratedAttribute.new(*arg.split(":"))
       else
         @controller_actions << arg
