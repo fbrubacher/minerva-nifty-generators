@@ -11,8 +11,10 @@ class NiftyScaffoldGenerator < Rails::Generator::Base
             else
               :text_field
             end
-          when :datetime, :timestamp, :time then :datetime_select
-          when :date                        then :date_select
+          when :date            
+            :calendar_date_select
+          when :datetime 
+            :calendar_date_select
           when :string                      then :text_field
           when :text                        then :text_area
           when :boolean                     then :check_box
@@ -35,7 +37,6 @@ class NiftyScaffoldGenerator < Rails::Generator::Base
       if arg == '!'
         options[:invert] = true
       elsif arg.include? ':'
-        debugger
         override_base
         @attributes << Rails::Generator::GeneratedAttribute.new(*arg.split(":"))
       else
@@ -150,13 +151,9 @@ class NiftyScaffoldGenerator < Rails::Generator::Base
   
   def render_form
     if form_partial?
-      if options[:haml]
-        "= render :partial => 'form'"
-      else
-        "<%= render :partial => 'form' %>"
-      end
+      "= render :partial => 'form'"
     else
-      read_template("views/#{view_language}/_form.html.#{view_language}")
+      read_template("views/haml/_form.html.haml")
     end
   end
   
@@ -205,7 +202,7 @@ class NiftyScaffoldGenerator < Rails::Generator::Base
 protected
   
   def view_language
-    options[:haml] ? 'haml' : 'erb'
+    'haml' 
   end
   
   def test_framework

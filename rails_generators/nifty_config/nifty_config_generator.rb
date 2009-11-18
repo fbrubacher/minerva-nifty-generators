@@ -14,6 +14,12 @@ class NiftyConfigGenerator < Rails::Generator::Base
       end
       m.file     "gemfile", "gemfile"
       m.file     "config.yml",  "config/#{file_name}_config.yml"
+      m.file     "js_css_settings.yml",  "config/js_css_settings.yml"
+      m.file     "javascripts/lightwindow.js",  "public/javascripts/lightwindow.js"
+      m.file     "javascripts/multifile.js",  "public/javascripts/multifile.js"
+      m.file     "javascripts/tablesort.js",  "public/javascripts/tablesort.js"
+      m.file     "javascripts/underscore.js",  "public/javascripts/underscore.js"
+      m.file     "javascripts/fastinit.js",  "public/javascripts/fastinit.js"
     end
   end
   

@@ -1,0 +1,23 @@
+  multifile_controllers_actions:
+    dogs: [new, edit, create, update]
+  multifile_controllers: []  
+
+  calender_controllers_actions:
+      dogs: [new, edit]
+      recurrent_bookings: [new, create]
+      single_bookings: [new, create]
+      availability_blocks: [new, edit] 
+      users: [show]
+      
+  calender_controllers: []  
+  
+  lightwindow_controllers_actions:
+      service_offerings: [new, edit, create, update]
+      bookings: [index]
+      
+  lightwindow_controllers: []    
+  
+  tinymce_controllers_actions:
+      site_contents: [new, edit]
+      
+  tinymce_controllers: []   
