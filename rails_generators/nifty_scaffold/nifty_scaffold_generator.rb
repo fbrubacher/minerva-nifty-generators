@@ -89,13 +89,13 @@ class NiftyScaffoldGenerator < Rails::Generator::Base
         
         m.directory "app/views/#{plural_name}"
         controller_actions.each do |action|
-          if File.exist? source_path("views/#{view_language}/#{action}.html.#{view_language}")
-            m.template "views/#{view_language}/#{action}.html.#{view_language}", "app/views/#{plural_name}/#{action}.html.#{view_language}"
+          if File.exist? source_path("views/haml/#{action}.html.haml")
+            m.template "views/haml/#{action}.html.haml", "app/views/#{plural_name}/#{action}.html.haml"
           end
         end
       
         if form_partial?
-          m.template "views/#{view_language}/_form.html.#{view_language}", "app/views/#{plural_name}/_form.html.#{view_language}"
+          m.template "views/haml/_form.html.haml", "app/views/#{plural_name}/_form.html.haml"
         end
       
         m.route_resources plural_name
@@ -200,10 +200,6 @@ class NiftyScaffoldGenerator < Rails::Generator::Base
   end
   
 protected
-  
-  def view_language
-    'haml' 
-  end
   
   def test_framework
     options[:test_framework] ||= default_test_framework
