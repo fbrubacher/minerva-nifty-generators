@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* CSS Document */
+
+form{
+	text-align:center;
+	margin:0 auto;
+}
+
+input[type=text] , textarea, input[type=password]  {
+	border:1px solid #CCC;
+	font:12px Arial, Helvetica, sans-serif;
+	color:#999;
+}
+
+input[type=file] {
+	
+}
+
+textarea {
+	
+}
+select {
+	
+}
+
+form .btn{
+	display:block;
+	border:none;
+	color:#FFF;
+	background:#42C1EB;
+	height:20px;
+	padding:3px 5px;
+	font:11px Arial, Helvetica, sans-serif;
+}
+
+
+
+/*FORMS*/
+
+form{
+	width:750px;
+	text-align:left;
+	padding:10px 0;
+	border:1px solid transparent;
+}
+
+form p{
+	float:left;
+	width:350px;
+	height:55px;
+	text-align:left;
+	border:1px solid transparent;
+	
+}
+
+form p label{
+	text-align:left;
+	height:22px;
+	width:100%;
+	display:block;
+	float:left;
+	margin:5px 0 2px 0;
+	line-height:22px;
+}
+
+form p .check{
+	float:left;
+	display:block;
+	margin-top:37px;
+}
+
+form p .label_check{
+	float:left;
+	width:auto;
+	margin:33px 0 0 5px;
+}
+
+form p input[type=text]{
+	height:18px;
+	width:145px;
+	float:left;
+	padding:2px 0 0 1px;
+}
+
+form p .btn{
+	float:left;
+	text-align:center;
+	height:30px;
+	padding:0 10px;
+	line-height:30px;
+	margin:20px 10px 10px 0;
+}
+
+form .med{
+	height:auto;
+	padding:0 0 10px 0;
+}
+
+form .hourly_rate{
+	height:auto;
+	padding:0 0 10px 0;
+}
+
+form .hourly_rate b{
+	float:left;
+	height:22px;
+	line-height:22px;
+	padding:0 2px;
+}
+
+form .hourly_rate input[type=text]{
+	width:65px;
+}
+
+form .dog_size{
+	height:auto;
+}
+
+form .dog_vaccinations{
+	height:auto;
+	margin-bottom:10px;
+}
+
+form .file{
+	width:390px;
+}
+
+form .update_file{
+	text-align:left;
+	width:100%;
+}
+
+form .update_file label{
+	width:100%;
+}
+
+form .area_text{
+	height:160px;
+}
+
+form .area_text textarea{
+	height:120px;
+	width:185px;
+}
+
+
+/*HOME*/
+#login{
+	width:300px;
+	float:right;
+}
+
+#content_box #msg{
+	width:300px;
+	height:270px;
+	float:right;
+	text-align:right;
+	margin:0 70px 0 0;
+}
+
+#content_box #msg span{
+	display:block;
+	font:29px Arial, Helvetica, sans-serif;
+	margin:80px 0 0 0;
+	color:#2BBAEA;
+}
+
+#content_box #msg p{
+	display:block;
+	font:38px Arial, Helvetica, sans-serif;
+	margin:0;
+	color:#666;
+}
+
+#login form{
+	width:320px;
+	text-align:left;
+}
+
+#login .user, #login .passsword{
+	width:90px;
+	height:17px;
+	margin:0 5px 5px 0;
+	padding:3px 0 0 0;
+}
+
+#login .btn{
+	position:relative;
+	float:right;
+	margin:0 71px 0 0;
+	height:22px;
+}
+
+#login #remember label, #login #remember a, #login #remember label, #login #remember input{
+	display:block;
+	float:left;
+	margin:0 3px 0 0;
+}
+
+#login #remember label{
+	margin:0 10px 0 0;
+}
+
+
+#login #remember a{
+	text-decoration:none;
+	color:#666;
+}
+
+#login #remember{
+	width:300px;
+	text-align:left;
+	font:10px Arial, Helvetica, sans-serif;
+	color:#666;
+}
+
+
+/* */
+

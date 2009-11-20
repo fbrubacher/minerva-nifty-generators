@@ -5,6 +5,13 @@
     %title
       = h(yield(:title) || "Untitled")
     %meta{"http-equiv"=>"Content-Type", :content=>"text/html; charset=utf-8"}/
+    <% if file_name.eql? "application" %>
+      = stylesheet_link_tag 'general' 
+      = stylesheet_link_tag 'layers' 
+      = stylesheet_link_tag 'nav'
+      = stylesheet_link_tag 'forms'
+      = stylesheet_link_tag 'tables' 
+    <% end %> 
     = stylesheet_link_tag '<%= file_name %>'
     = yield(:head)
   

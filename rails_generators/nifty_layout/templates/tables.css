@@ -1,0 +1,273 @@
+@charset "utf-8";
+/* CSS Document */
+h1{
+
+}
+
+.lists{
+	width:750px;
+	margin:0 auto;
+	border:0;
+	padding:0;
+	border-collapse:collapse;
+	font:11px Arial, Helvetica, sans-serif ;
+	color:#000;
+	background-color:#FFF;
+	text-align:left;
+}
+
+.lists th{
+height:25px;
+text-align:left;
+padding:0;
+font:12px Arial, Helvetica, sans-serif;
+font-weight:bold;
+background:#42C1EB;
+border-bottom:3px solid #FFF;
+padding:0 0 0 5px;
+}
+
+.list-line-odd{
+	background: #CBEEFA;
+}
+
+.list-line-even{
+	background: #A8E3F6;
+}
+
+
+.lists td{
+	padding:0;
+	height:30px;
+	border-bottom:3px solid #FFF;
+	font:11px Arial, Helvetica, sans-serif;
+	padding:0 0 0 5px;
+}
+
+.lists a{
+	text-decoration:none;
+	font:11px Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+.lists .closehour a{
+	width:18px;
+	height:18px;
+	background:#42C1EA url(../images/x.gif) no-repeat center;
+	border:none;
+}
+
+.lists .closehour a{
+	float:right;
+	margin:0;
+}
+
+
+.lists .trh1{
+	padding:0;
+}
+
+.lists h1{
+	margin:0;
+	padding:0;
+	float:left;
+	height:50px;
+}
+
+.lists .trh2{
+	background:#42C1EB;
+	height:23px;
+}
+
+.lists h2{
+	display:block;
+	height:auto;
+	margin:0;
+	padding:0;
+}
+
+.lists .td_btn_orange{
+	margin:0;
+	padding:0;
+}
+.lists .td_btn_orange a{
+	display:block;
+	background:#FAAB41;
+	height:20px;
+	/*width:100px;*/
+	line-height:20px;
+	text-align:center;
+	text-decoration:none;
+	color:#FFF;
+	float:right;
+}
+
+
+/* Search results*/
+.lists td{
+	height:30px;
+}
+.lists .td_booking_btn{
+	margin:0;
+	padding:0;
+}
+.lists .td_booking_btn a{
+	display:block;
+	background:#FAAB41;
+	height:24px;
+	width:200px;
+	line-height:24px;
+	text-align:center;
+	text-decoration:none;
+	color:#FFF;
+	float:right;
+	border-left:3px solid #FFF;
+}
+
+
+/* SCROLL TABLES*/
+
+.scroll-table-body table {
+border-collapse: collapse;
+}
+
+
+.scroll-table-head{
+background:#42C1EB;
+border-bottom:3px solid #FFF;
+height:25px;
+}
+.scroll-table-head table {
+border-collapse: collapse;
+}
+
+.scroll-table-head thead, tfoot {
+height:25px;
+text-align:left;
+font:12px Arial, Helvetica, sans-serif;
+font-weight:bold;
+background:#42C1EB;
+/*border-bottom:3px solid #FFF;*/
+}
+
+
+.scroll-table-head  .sortcol {
+	cursor: pointer;	
+	padding:0 0 0 5px;
+}
+
+
+
+.scroll-table-head  .sortcol span{
+	width:auto;
+	padding:0 18px 0 0;
+}
+
+.scroll-table-head .sortasc span{
+	background:url(/images/up.gif) no-repeat right center;
+}
+
+.scroll-table-head .sortdesc span{
+	
+	background:url(/images/down.gif) no-repeat right center;
+}
+
+.scroll-table-head .nosort {
+	cursor: default;
+}
+
+
+.scroll-table-body td {
+	overflow: hidden;
+}
+
+
+.button_table, .button_table_a{
+	width:750px;
+	height:26px;
+	text-align:right;
+	margin:20px auto 0 auto;
+}
+
+
+
+.button_table .btn{
+	display:block;
+	background:#FAAB41;
+	height:24px;
+	width:200px;
+	line-height:24px;
+	text-align:center;
+	text-decoration:none;
+	color:#FFF;
+	float:right;
+	border-left:3px solid #FFF;
+}
+
+
+.scroll-table-head {
+    width: 750px;
+	margin:0 auto;
+}
+
+.scroll-table-body {
+    width: 751px;    
+	height: 200px;
+	margin:0 auto;
+}
+
+.button_table_a a{
+	display:block;
+	height:24px;
+	width:200px;
+	line-height:24px;
+	text-align:center;
+	text-decoration:none;
+	color:#FFF;
+	float:right;
+	background:#FAAB41;
+}
+
+
+
+/* FORMS TABLES*/
+
+form table{
+	width:740px;
+	border-collapse:collapse;
+}
+
+form table td{
+	width:50%;
+	vertical-align:top;
+}
+
+
+form table label{
+	display:block;
+	width:100%;
+	margin:10px 0 5px 0;
+}
+
+form table textarea{
+	width:185px;
+	height:120px;
+}
+
+form table .btn{
+	width:auto;
+	width:auto;
+	float:left;
+	height:26px;
+	margin:20px 10px 20px 0;
+	padding:0 20px;
+	line-height:26px;
+	cursor:pointer;
+}
+
+form table input[type=text]{
+	height:18px;
+	width:145px;
+	float:left;
+	padding:2px 0 0 1px;
+}

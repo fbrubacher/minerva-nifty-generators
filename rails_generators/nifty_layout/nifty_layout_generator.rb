@@ -10,14 +10,9 @@ class NiftyLayoutGenerator < Rails::Generator::Base
       m.directory 'public/stylesheets'
       m.directory 'app/helpers'
       
-      if options[:haml]
-        m.directory 'public/stylesheets/sass'
-        m.template "layout.html.haml", "app/views/layouts/#{file_name}.html.haml"
-        m.file     "stylesheet.sass",  "public/stylesheets/sass/#{file_name}.sass"
-      else
-        m.template "layout.html.erb", "app/views/layouts/#{file_name}.html.erb"
-        m.file     "stylesheet.css",  "public/stylesheets/#{file_name}.css"
-      end
+      m.directory 'public/stylesheets/sass'
+      m.template "layout.html.haml", "app/views/layouts/#{file_name}.html.haml"
+      m.file     "stylesheet.sass",  "public/stylesheets/sass/#{file_name}.sass"
       m.file "helper.rb", "app/helpers/layout_helper.rb"
     end
   end

@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**/
+#menu{
+height:27px;
+width:100%;
+background:#FFF;
+text-align:right;
+border:none;
+}
+
+#menu ul{
+list-style:none;
+width: auto;
+margin:0;
+padding:0;
+border:none;
+margin:0;
+padding:0;
+background:#FFF;
+}
+
+#menu li{
+margin:0;
+padding:0 2px;
+color: none;
+background: none;
+text-decoration: none;
+border:none;
+position: relative;
+height:30px;
+float:right;
+}
+
+
+
+#menu li a{
+display:block;
+float:left;
+color:#666;
+font:11px Arial, Helvetica, sans-serif;
+height:30px;
+line-height:30px;
+padding:0 20px;
+background: url(/images/menu_btn.png) no-repeat -185px;
+}
+
+#menu li span{
+display:block;
+width:6px;
+height:30px;
+float:right;
+position:absolute;
+right:0;
+background: url(/images/menu_btn_r.png) no-repeat -6px;
+}
+
+#menu li:hover a{
+background: url(/images/menu_btn.png) no-repeat left;
+}
+
+#menu li:hover span{
+background: url(/images/menu_btn_r.png) no-repeat left;
+}
+
+#menu  .current a{
+background: url(/images/menu_btn.png) no-repeat left;
+}
+
+#menu  .current span{
+background: url(/images/menu_btn_r.png) no-repeat left;
+}
+
+#user_data{
+height:81px;
+background:#FFF;
+text-align:right;
+color:#666;
+}
+
+#user_data ul{
+list-style:none;
+width: 100%;
+height:50px;
+margin:0;
+padding:0;
+border:none;
+margin:0;
+padding:0;
+}
+
+#user_data li{
+margin:0;
+padding:0 10px;
+color: none;
+background: none;
+text-decoration: none;
+border:none;
+position: relative;
+}
+
+#user_data li span{
+	display:block;
+}
+
+#user_data li a{
+margin:0 5px;
+text-decoration:none;
+color:#666;
+}

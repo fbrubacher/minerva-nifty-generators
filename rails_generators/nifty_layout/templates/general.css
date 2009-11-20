@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;
+}
+
+html, body{
+
+}
+
+body {
+	margin:0;
+	padding:0;
+	border:0;
+	width:100%;
+	background:#FFF;
+	font-size:12px;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	height:100%;
+	min-width:900px;
+}
+
+img {border: 0;}
+
+html, body, form, h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl {margin:0;padding:0;}
+
+.spacer{clear:both;}
+
+/*  h1 h2 h3 h4*/
+h1 {
+	display:block;
+	text-align:left;
+	font:18px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	width:750px;
+	margin:0 auto;
+	padding:0;
+}
+
+h2 {
+	display:block;
+	text-align:left;
+	font:15px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+
+h3{
+}
+
+h4{
+}
+
+/* links */
+a{
+	text-decoration:none;
+	outline:0;
+}
+
+a:link, a:visited {
+text-decoration: none;
+}
+
+a:hover, a:active {
+text-decoration: none;
+}
+
+a[href^="http:"] {
+}
+
+/*texts*/
+
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.bodystyle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#spacer{
+	clear:both;
+}

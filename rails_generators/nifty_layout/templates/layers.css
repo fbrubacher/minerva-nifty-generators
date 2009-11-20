@@ -1,0 +1,304 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#main{
+	width:100%;
+	background:#FFF;
+}
+
+#header_cont{
+	width:100%;
+	background: url(/images/header_bg.gif) repeat-x bottom;
+}
+
+#header {
+	clear:both;
+	width:920px;
+	height:150px;
+	background: url(/images/header_bg.gif) repeat-x bottom;
+	margin:0 auto;
+}
+
+#header h1 {
+	position:relative;
+	background: url(/images/logo.png) no-repeat 0px;
+	width:235px;
+	height:113px;
+	margin:31px 0 0 87px;;
+	display:block;
+	float:left;
+}
+
+#header h1 span {
+	display: none
+}
+
+#header h3 {
+	display: none;
+	margin: 0;
+}
+
+#content{
+	width:920px; 
+	margin:0 auto;
+	background:#fff;
+	padding:30px;
+}
+
+#system_messages{
+	text-align:center;
+	background:#FFF;
+	font: normal 12px Arial, Helvetica, sans-serif;
+	width:100%;
+}
+
+
+/*Error messages*/
+
+.errorExplanation{
+	width:100%;
+}
+
+.errorExplanation p{
+	width:100%;
+	height:auto;
+}
+
+#errorExplanation ul{
+	width:100%;
+	list-style:none;
+}
+
+#errorExplanation li{
+	text-decoration:none;
+}
+
+
+/*FOOTER*/
+
+#footer_cont{
+	width:100%;
+	background:#F1F1F1;
+}
+
+
+#footer {
+	height:60px;
+	clear:both;
+	width:920PX;
+	color:#666;
+	margin:0 auto;
+	
+}
+
+#footer span{
+	float:left;
+}
+
+#footer ul{
+	list-style:none;
+	width: auto;
+	margin:0;
+	padding:0;
+	border:none;
+	margin:0;
+	padding:0;
+	background:#F36;
+}
+
+#footer li{
+	margin:0;
+	padding:0 10px;
+	color: none;
+	background: none;
+	text-decoration: none;
+	border:none;
+	position: relative;
+	float:right;
+	color:#333;
+	display:block;
+	margin:20px 10px 0 0;
+}
+
+#footer li a{
+	text-decoration:none;
+	color:#333;
+}
+
+#footer span{
+	display:block;
+	margin:20px 0 0 10px;
+	color:#333;
+}
+
+
+
+/*Boxes*/
+
+#boxes_cont{
+	height:200px;
+	width:913px;
+	margin:0 auto;
+}
+
+
+#box .t {background:url(/images/t.jpg) repeat-x 2px 0; width:100%}
+#box .b {background:url(/images/b.jpg) repeat-x 0 100%}
+#box .l {background:url(/images/l.jpg) repeat-y 0 0 }
+#box .r {background:url(/images/r.jpg) repeat-y 100% 0}
+#box .bl {background:url(/images/bl.jpg) no-repeat 0 100%}
+#box .br {background:url(/images/br.jpg) no-repeat 100% 100%}
+#box .tl {background:url(/images/tl.jpg) no-repeat 0 0}
+#box .tr {background:url(/images/tr.jpg) no-repeat 100% 0; padding:10px}
+
+
+
+/*Boxes HOME*/
+
+.big_home{
+	width:911px;
+	margin:10px auto;
+}
+
+.big_home #img{
+	width:491px;
+	height:341px;
+	margin:0 auto;
+	background:url(/images/dog_home.jpg) no-repeat bottom;
+	float:left;
+}
+
+.big_home #content_box{
+	height:341px;
+	background:#FFF url(/images/big_home_bg.jpg) repeat-x bottom;
+}
+
+
+.medium_home{
+	width:304px;
+	float:left;
+	margin:10px 0;
+}
+
+.medium_home #content_box{
+	height:190px;
+	background:#FFF url(/images/small_bg.jpg) repeat-x top;
+}
+
+.medium_home #img_owner {
+	width:123px;
+	height:181px;
+	float:left;
+	background: url(/images/img_owner_home.jpg) no-repeat top;
+}
+
+.medium_home #img_provider {
+	width:123px;
+	height:181px;
+	float:left;
+	background: url(/images/img_owner_home.jpg) no-repeat top;
+}
+
+.medium_home #data{
+	width:130px;
+	float:left;
+	text-align:left;
+	margin:30px 0 0 0;
+}
+
+.medium_home #data span{
+	font:15px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+
+.medium_home #data p{
+	font:11px Arial, Helvetica, sans-serif;
+}
+
+.medium_home .join_home{
+	text-decoration:none;
+	display:block;
+	height:34px;
+	width:140px;
+	color:#FFF;
+	background:#6CCFF0;
+	font:17px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	margin:20px 0 0 0;
+	text-align:center;
+	line-height:34px;
+}
+
+.without_img #data{
+	width:85%;
+	margin:30px 20px;
+}
+
+
+/*Layers dogs*/
+
+#column_owner{
+	width:200px;
+	float:left;
+	text-align:left;
+}
+
+#column_owner h2, #column_dogs h2{
+	display:block;
+	margin:0 0 10px 0;
+}
+
+#column_dogs{
+	width:700px;
+	float:right;
+	text-align:left;
+}
+
+#column_dogs form{
+	float:left;
+}
+
+
+#column_dogs #dog{
+	width:300px;
+	text-align:left;
+	border-bottom:1px solid #999;
+	padding:0 0 30px 0;
+}
+
+#column_dogs .dog_small{
+	float:left;
+}
+
+#column_dogs #dog_data{
+	float:left;
+	padding:0 0 0 10px;
+}
+
+
+#dog_data h3{
+	display:block;
+	font:15px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-transform:capitalize;
+	margin:0 0 10px 0;
+}
+
+#dog_data p{
+	display:block;
+	font:11px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+
+#column_dogs #dog_links{
+	float:left;
+	width:100%;
+	margin:30px 0 0 0;
+}
+
+#column_dogs #dog_links a{
+	text-decoration:underline;
+	color:#6CCFF0;
+	font-weight:bold;
+}

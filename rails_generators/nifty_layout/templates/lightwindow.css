@@ -1,0 +1,98 @@
+/* LIGHTBOX */
+
+.fadebox {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:9001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+.overbox {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:170px;
+	height:110px;
+	margin-top: -85px; 
+	margin-left: -65px; 
+    z-index:9002;
+    overflow: false;
+}
+
+#over #content_box{
+	background-color:#FFF;
+	width:170px;
+	height:110px;
+	border:1px solid #666;
+	margin:0;
+	padding:0;
+	border:1px solid #999;
+}
+
+
+#over #content_box #content_preview{
+	width:170px;
+	background-color:#FFF;
+	margin:0;
+	padding:0;
+}
+
+#over .closePreview{
+	position:relative;
+	display:block;
+	text-align:center;
+	font:12px Arial, Helvetica, sans-serif;
+	color:#666;
+	height:16px;
+	width:40px;
+	line-height:16px;
+	margin:-15px 0 -1px 129px;
+	background:#FFF;
+	padding:1px;
+}
+
+
+
+
+
+
+/*STYLES LIGHTBOXES*/
+
+#over form{
+	width:166px;
+	margin:1px;
+}
+
+
+#over form p{
+	width:80px;
+	height:24px;
+	margin:0;
+	padding:0;
+}
+
+#over #title{
+	display:block;
+	float:left;
+	width:162px;
+	height:19px;
+	margin:-10px 0 5px 0;
+	line-height:19px;
+	background:#3CF;
+	color:#FFF;
+	padding:0 0 0 4px;
+}
+
+#over .btn{
+	margin:4px 0 0 0;
+	height:20px;
+	float:left;
+	line-height:20px;
+}

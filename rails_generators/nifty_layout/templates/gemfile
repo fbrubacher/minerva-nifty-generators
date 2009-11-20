@@ -1,0 +1,20 @@
+clear_sources
+bundle_path "vendor/bundler_gems"
+
+source "http://gemcutter.org"
+source "http://gems.github.com"
+
+gem "rails", "2.3.4"
+
+gem "calendar_date_select"
+gem "clearance"
+gem "will_paginate"
+gem "sinatra"
+gem "gchartrb", :require_as => "google_chart"
+gem "ddollar-pacecar", "1.1.6", :require_as => "pacecar"
+gem "net-scp"
+
+only :test do
+  gem "shoulda"
+  gem "factory_girl"
+end
