@@ -6,13 +6,13 @@
       %td
         = f.label :<%= attribute.name %>
       %td
-        <%- if  attribute.field_type.to_s.eql? "calendar_date_select" -%> 
-          = f.calendar_date_select :<%= attribute.name %>, :embedded => false, :popup => 'force'
-        <%- elsif  attribute.field_type.to_s.eql? "select" -%>
-          = f.select :<%= attribute.name %>, <%= attribute.name.split("_").first.capitalize %>.all.collect { |p| p.id , p.name }, :include_blank => true 
-        <%- else -%>
-          = f.<%= attribute.field_type %> :<%= attribute.name %>
-        <%- end -%>
+      <%- if  attribute.field_type.to_s.eql? "calendar_date_select" -%> 
+        = f.calendar_date_select :<%= attribute.name %>, :embedded => false, :popup => 'force'
+      <%- elsif  attribute.field_type.to_s.eql? "select" -%>
+        = f.select :<%= attribute.name %>, <%= attribute.name.split("_").first.capitalize %>.all.collect { |p| p.id , p.name }, :include_blank => true 
+      <%- else -%>
+        = f.<%= attribute.field_type %> :<%= attribute.name %>
+      <%- end -%>
   <%- end -%>
     %tr
       %td

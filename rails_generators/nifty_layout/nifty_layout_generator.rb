@@ -18,7 +18,7 @@ class NiftyLayoutGenerator < Rails::Generator::Base
       m.file "layers.sass", "public/stylesheets/sass/layers.sass"
       m.file "nav.sass", "public/stylesheets/sass/nav.sass"
       m.file "forms.sass", "public/stylesheets/sass/forms.sass"
-      m.file "tables.sass", "public/stylesheets/sass/tables.sass"
+      m.file "table.sass", "public/stylesheets/sass/tables.sass"
     end
   end
   

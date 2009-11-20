@@ -5,24 +5,27 @@ A collection of useful Rails generator scripts.
 
 == Install
 
-  gem install nifty-generators
+To make/install as a gem:
 
-You may need to uninstall the older version if it's installed.
-
-  gem uninstall ryanb-nifty-generators
+  git clone private url
+  rake manifest  
+  rake build_gemspec          
+Change the name in the nifty-generator.gemspec to minerva-nifty-generators
+  gem build nifty-generators.gemspec
+  gem install minerva-nifty-generators.gem
+  
 
 
 == Usage
 
-Once you install the gem, the generators will be available to all Rails
-applications on your system. If you run script/generate without any
-additional arguments you should see the available generators listed.
+Do once when starting a new rails app 
+  script/generate nifty_config
+  gem bundle
+  script/generate nifty_layout
 
-To run the generator, go to your rails project directory and call it
-using the script/generate or script/destroy command.
+An example of using nifty_scaffold 
 
-  script/generate nifty_scaffold Recipe name:string index new
-
+  script/generate nifty_scaffold Recipe name:string 
 
 == Included Generators
 
