@@ -14,6 +14,11 @@ class NiftyLayoutGenerator < Rails::Generator::Base
       m.template "layout.html.haml", "app/views/layouts/#{file_name}.html.haml"
       m.file     "stylesheet.sass",  "public/stylesheets/sass/#{file_name}.sass"
       m.file "helper.rb", "app/helpers/layout_helper.rb"
+      m.file "general.sass", "public/stylesheets/sass/general.sass"
+      m.file "layers.sass", "public/stylesheets/sass/layers.sass"
+      m.file "nav.sass", "public/stylesheets/sass/nav.sass"
+      m.file "forms.sass", "public/stylesheets/sass/forms.sass"
+      m.file "tables.sass", "public/stylesheets/sass/tables.sass"
     end
   end
   

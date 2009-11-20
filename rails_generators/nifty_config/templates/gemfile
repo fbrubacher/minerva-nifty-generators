@@ -6,13 +6,9 @@ source "http://gems.github.com"
 
 gem "rails", "2.3.4"
 
-gem "clearance"
-gem "will_paginate"
-gem "sinatra"
-gem "xml-simple"
-gem "gchartrb", :require_as => "google_chart"
-gem "ddollar-pacecar", "1.1.6", :require_as => "pacecar"
-gem "net-scp"
+gem "haml"
+gem "authlogic"
+gem "calendar_date_select"
 
 only :test do
   gem "shoulda"
